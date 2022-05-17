@@ -1,4 +1,5 @@
 {% load static %}
+{% for us in usercheck %}
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -75,11 +76,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
+					<div id="fh5co-logo"><a href="/indexfr">Wedding<strong>.</strong></a></div>
 				</div>
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
+						<li class="active"><a href="/indexfr">Home</a></li>
 					</ul>
 				</div>
 			</div>
@@ -108,7 +109,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                {% for inv in invitation1 %}
+                                {% for inv in allinvite1 %}
                                 
                                 <tr>
                                     <td class="pr-0" style="width: 45px;">
@@ -197,4 +198,4 @@
 
 	</body>
 </html>
-
+{% endfor %}
