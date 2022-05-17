@@ -21,6 +21,9 @@ print(db_connection)
 def indexfr(request):
     return render(request,'index.html')
 
+def indexhe(request):
+    return render(request,'indexhe.html')
+
 def contactfr(request):
     return render(request,'contact.html')
 

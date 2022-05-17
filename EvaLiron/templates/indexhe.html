@@ -77,9 +77,16 @@
 				<div class="col-xs-2">
 					<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
 				</div>
+				<div class="col-xs-10 text-left menu-1">
+					<ul>
+						<li class="active"><a href="/he">עברית</a></li>
+						<li><a href="/fr">Francais</a></li>
+						
+					</ul>
+				</div>
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
-						<li class="active"><a href="/indexfr">Home</a></li>
+						<li class="active"><a href="/he">Home</a></li>
 						<li><a href="#fh5co-couple-story">Story</a></li>
 						<li class="has-dropdown">
 							<a href="#fh5co-gallery">Gallery</a>
@@ -114,7 +121,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>! היי</h2>
+					<h2>! ברוך הבא</h2>
 					<h3>28 August 2022</h3>
 					<p>!נחכה לכם בחתונה שלנו</p>
 				</div>
@@ -225,8 +232,8 @@
 							<div class="timeline-badge" style="background-image:url({% static 'images/couple-2.jpg' %});"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">הדייט הראשון</h3>
-									<span class="date">Le 5 Juillet 2018</span>
+									<h3 class="timeline-title"> הדייט הראשון שלנו התקיים</h3>
+									<span class="date">ב-5 ליולי 2018</span>
 								</div>
 								<div class="timeline-body">
 									<p>בבית הפנקייק שגרם לנו להכיר אחד את השני יותר. הנשיקה הראשונה קרה בחזרה לבית</p>
@@ -249,11 +256,11 @@
 							<div class="timeline-badge" style="background-image:url({% static 'images/couple-4.jpg' %});"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Jusqu'a nos fiancailles</h3>
-									<span class="date">Le 11 Mars 2021</span>
+									<h3 class="timeline-title">עד האירוסין שלנו</h3>
+									<span class="date">11 במרץ 2021</span>
 								</div>
 								<div class="timeline-body">
-									<p>Ou notre vision du monde a changer ensemble. Nous unir et nous cherir est la meilleure decision que l'on ai pu prendre.</p>
+									<p>איפה החזון שלנו על העולם השתנה ביחד. להתאחד ולהוקיר אחד את השני זו ההחלטה הטובה ביותר שיכולנו לקבל.</p>
 								</div>
 							</div>
 						</li>
@@ -269,7 +276,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<span>Our Memories</span>
 					<h2>Wedding Gallery</h2>
-					<p>Cordialement, Eva & Liron</p>
+					<p>באהבה, Eva & Liron</p>
 				</div>
 			</div>
 			<div class="row row-bottom-padded-md">
@@ -372,7 +379,7 @@
 								</span>
 
 								<span class="counter js-counter" data-from="0" data-to="250" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Invites Estimes</span>
+								<span class="counter-label">מוזמנים</span>
 
 							</div>
 						</div>
@@ -383,7 +390,7 @@
 								</span>
 
 								<span class="counter js-counter" data-from="0" data-to="300" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Total D'invites</span>
+								<span class="counter-label">סה'כ מוזמנים</span>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6 animate-box">
@@ -392,7 +399,7 @@
 									<i class="icon-calendar"></i>
 								</span>
 								<span class="counter js-counter" data-from="0" data-to="2" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Evenements</span>
+								<span class="counter-label">אירועים</span>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6 animate-box">
@@ -402,7 +409,7 @@
 								</span>
 
 								<span class="counter js-counter" data-from="0" data-to="7" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Temps Estimes (h)</span>
+								<span class="counter-label">זמן החתונה (ש)</span>
 
 							</div>
 						</div>
@@ -416,8 +423,8 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Serez-vous present?</h2>
-					<p>Veuillez remplir les champs ci-dessous. Merci a vous.</p>
+					<h2>? האם תהיה נוכח</h2>
+					<p>.אנא מלא את השדות למטה. תודה</p>
 				</div>
 			</div>
 			<div class="row animate-box">
@@ -426,31 +433,31 @@
 						{% csrf_token %}
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
-								<label for="name" class="sr-only">Nom</label>
-								<input name="lname" type="text" class="form-control"  placeholder="Nom" required>
+								<label for="name" class="sr-only">שם משפחה</label>
+								<input name="lname" type="text" class="form-control"  placeholder="שם משפחה" required>
 							</div>
 							<div class="form-group">
-								<label for="number" class="sr-only">Nombre d'invites</label>
-								<input name="numinvite" type="number" class="form-control"  placeholder="Nombre d'invites avec vous" value="0">
+								<label for="number" class="sr-only">מס' מוזמנים איתך</label>
+								<input name="numinvite" type="number" class="form-control"  placeholder="מס' מוזמנים איתך" value="0">
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
-								<label for="name" class="sr-only">Prenom</label>
-								<input name="fname" type="text" class="form-control" placeholder="Prenom" required>
+								<label for="name" class="sr-only">שם פרטי</label>
+								<input name="fname" type="text" class="form-control" placeholder="שם פרטי" required>
 							</div>
 							<div class="form-group">
-								<label for="name" class="sr-only">Je..</label>
+								<label for="name" class="sr-only">..אני</label>
 								<div class="col-lg-10">
 									<div class="form-check-horizontal">
 										<label class="custom-control custom-radio custom-control-inline">
 											<input type="radio" class="custom-control-input" name="participate" checked placeholder="Placeholder" value="Yes">
-											<span class="custom-control-label">Participerais</span>
+											<span class="custom-control-label">ישתתף</span>
 										</label>
 
 										<label class="custom-control custom-radio custom-control-inline">
 											<input type="radio" class="custom-control-input" name="participate" placeholder="Placeholder" value="No">
-											<span class="custom-control-label">Ne Participerais pas</span>
+											<span class="custom-control-label">לא ישתתף</span>
 										</label>
 									</div>
 								</div>
@@ -460,12 +467,12 @@
 						</div>
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
-								<label for="name" class="sr-only">Commentaire</label>
-								<textarea rows="5" cols="5" class="form-control" placeholder="Commentaire" name="comment"></textarea>
+								<label for="name" class="sr-only">הֶעָרָה</label>
+								<textarea rows="5" cols="5" class="form-control" placeholder="הערה" name="comment"></textarea>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">Valider</button>
+							<button type="submit" class="btn btn-default btn-block">שמירת נתונים</button>
 						</div>
 					</form>
 				</div>

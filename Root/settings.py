@@ -103,6 +103,17 @@ DATABASES = {
 }
 
 #DATABASES = {
+#'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'db-wel',
+#        'USER': 'admin',
+#        'PASSWORD': 'el050718',
+#        'HOST': 'db-wel.c4joaqwcqrpg.eu-central-1.rds.amazonaws.com',
+#        'PORT': '3306',
+#    }
+#}
+
+#DATABASES = {
 #    'default': dj_database_url.config()
 #}
 
