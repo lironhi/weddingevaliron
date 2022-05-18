@@ -81,34 +81,34 @@ WSGI_APPLICATION = 'Root.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db_wea',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
 #DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'db_wea',
+#        'USER': 'root',
+#        'PASSWORD': '',
+#        'HOST': '',
+#        'PORT': '',
+#        'OPTIONS': {
+#            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+#        },
+#    }
+#}
+
+#DATABASES = {
 #'default': {
 #        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': 'db-wel',
+#        'NAME': 'database-1',
 #        'USER': 'admin',
-#        'PASSWORD': 'el050718',
-#        'HOST': 'db-wel.c4joaqwcqrpg.eu-central-1.rds.amazonaws.com',
+#        'PASSWORD': 'okoklol123',
+#        'HOST': 'database-1.c4joaqwcqrpg.eu-central-1.rds.amazonaws.com',
 #        'PORT': '3306',
 #    }
 #}
