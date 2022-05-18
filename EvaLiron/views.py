@@ -5,8 +5,10 @@ from django.http import JsonResponse
 from django.contrib import messages
 import mysql.connector
 #import requests
-from EvaLiron.models import User, Invitation
+#from EvaLiron.models import User, Invitation
+
 # Create your views here.
+
 #db_connection = mysql.connector.connect(
 #  host="localhost",
 #  user="root",
