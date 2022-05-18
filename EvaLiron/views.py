@@ -4,7 +4,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.http import JsonResponse
 from django.contrib import messages
 import mysql.connector
-import requests
+#import requests
 from EvaLiron.models import User, Invitation
 # Create your views here.
 #db_connection = mysql.connector.connect(
