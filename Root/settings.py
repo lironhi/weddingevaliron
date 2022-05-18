@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-d58-$_=10&5+v^a@199xd*db440&&2wd8szmxpt7(4cf8i6z*s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -81,12 +81,12 @@ WSGI_APPLICATION = 'Root.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
 
 #DATABASES = {
 #    'default': {
@@ -113,9 +113,9 @@ DATABASES = {
 #    }
 #}
 
-#DATABASES = {
-#    'default': dj_database_url.config()
-#}
+DATABASES = {
+    'default': dj_database_url.config()
+}
 
 
 
@@ -164,4 +164,4 @@ STATICFILES_DIRS = ['static']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#django_heroku.settings(locals())
+django_heroku.settings(locals())
