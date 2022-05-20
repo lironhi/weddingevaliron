@@ -12,4 +12,5 @@ urlpatterns = [
     #path('added', views.f_addinvite),
     path('contactfr', views.contactfr),
     path('he', views.indexhe),
+    path('contacthe', views.contacthe),
 ]

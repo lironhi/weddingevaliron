@@ -36,6 +36,9 @@ def indexhe(request):
 def contactfr(request):
     return render(request,'contact.html')
 
+def contacthe(request):
+    return render(request,'contactis.html')
+
 #def login(request):
 #    return render(request,'login.html')
 
